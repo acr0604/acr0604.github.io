@@ -1,0 +1,28 @@
+body{
+    background-color: lightgray;
+    font-family: Arial, sans-serif;
+    margin: 0px auto;
+    border: 1px;
+    border-color: solid darkgrey;
+}
+#nombre{
+    font-size: 32px;
+}
+.contacto{
+    width: 10%;
+    padding: 2%;
+}
+
+address{
+    background: darkgray;
+    height: 100px;
+    width: 100%;
+    margin: 0px;
+    text-align: center;
+    line-height:50px;
+    color: white;
+}
+
+.fix{
+    clear: both;
+}
