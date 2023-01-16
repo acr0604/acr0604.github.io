@@ -1,0 +1,101 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.logo > img {
+  width: 50px;
+}
+
+.logo{
+  display:flex;
+  align-items: left;
+  justify-content: center;
+}
+
+header{
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: space-evenly;
+}
+
+nav{
+  text-align:left;
+  background-color:rgb(116, 115, 115);
+  margin-left: 10px;
+}
+ul{
+  list-style: none;
+}
+.hamburger{
+  display: flex;
+  justify-content: flex-end;
+  color:white
+}
+.menu {
+  display: none;
+}
+.product{
+  border:solid;
+  border-width: 1px;
+  border-color: gray;
+  text-align: center;
+  margin-top: 0.3%;
+}
+.social {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+/*Tablets*/
+@media(min-width: 768px) and (max-width: 1024px){
+  body{
+    margin-inline: 40px;
+  }
+  header{
+    display:flex;
+    flex-direction: row;
+    align-items:center;
+  }
+  .product{
+    margin-left: 40px; 
+    margin-right: 40px;
+  }
+  .h{
+    width: 80%;
+    height: 1px;
+    border: 1px;
+  }
+}
+
+/*Pantallas grandes*/
+@media(min-width: 1025px){
+  header{
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-right: 20%;
+  }
+
+  .menu {
+    color: white;
+    justify-content: right;
+    display:flex;
+    flex-direction: row;
+    align-items: flex-end;
+    justify-content: space-evenly;
+  }
+
+  .hamburger{
+    display: none;
+  }
+}
+
